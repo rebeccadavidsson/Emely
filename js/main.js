@@ -401,15 +401,59 @@ var slideUp = {
 };
 
 
+ScrollReveal().reveal('.service-holder', {
+    delay: 0,
+    // distance: '1000px',
+    // origin: "top",
+    duration: 1000,
+    reset: true,
+    mobile: true,
+});
+
 
 ScrollReveal().reveal('.timeline-event-content', {
     delay: 0,
-    distance: '1000px',
+    distance: '100px',
     origin: "right",
     duration: 1000,
-    reset: true,
-    mobile: false,
-    viewOffset: {
-        bottom: -1200
-    }
+    reset: false,
+    mobile: true,
 });
+
+
+ScrollReveal().reveal('#right-section-about', {
+    delay: 0,
+    duration: 1000,
+    reset: false,
+    delay: 100,
+    mobile: true,
+});
+
+ScrollReveal().reveal('.home-right-part', {
+    delay: 0,
+    distance: "100px",
+    origin: "top",
+    duration: 2000,
+    reset: false,
+    mobile: false,
+});
+
+ScrollReveal().reveal('.content-left', {
+    delay: 0,
+    distance: "200px",
+    origin: "bottom",
+    duration: 2000,
+    reset: false,
+    mobile: false,
+});
+
+
+
+
+
+function sendMail() {
+    var link = "mailto:emelydavidsson@gmail.com";
+
+    window.location.href = link;
+}
+

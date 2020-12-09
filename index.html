@@ -6,6 +6,8 @@
             
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -99,7 +101,10 @@
                         <div class="section-wrapper block">
                             <div class="home-left-part">
                                 <!-- <p class="site-des">Hello. My name is</p> -->
-                                <h1 class="entry-title">Emely Davidsson</h1>                                
+                                <div class="typewriter">
+                                     <h1 class="entry-title">Emely Davidsson</h1>     
+                                     <!-- <h1 class="entry-title">Davidsson</h1>    -->
+                                </div>
                                 <p class="site-info">
                                     Student of International Business with strong people skills and a well-developed skillset in teamwork and
                                     organization via Problem Based Learning. 
@@ -112,7 +117,8 @@
                                 </div>
 
                             </div>                            
-                            <div class="home-right-part">                                
+                            <div class="home-right-part">  
+                                <!-- <img src="images/emely2.jpg" class="title-image"/>                               -->
                             </div>           
                             <div class="gradient"></div>                 
                         </div>
@@ -159,7 +165,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="one-half width-40 last">                                
+                                    <div class="one-half width-40 last" id="right-section-about">                                
                                         <h2 class="entry-title section-title">About me</h2>
                                         <p class="section-info">
                                             I have held several student functions on bringing international students together. I am ambitious and motivated, with a desire to
@@ -182,105 +188,8 @@
                         </div>
                     </div>
 
-                    <!-- Portfolio Section -->  
-                    <div id="portfolio" class="section">                        
-                        <div class="section-wrapper block">
-                            <div class="content-1300">
-                                <div id="portfolio-wrapper" class="relative">
-                                
-                                    <!-- <div class="category-filter">
-                                        <div class="category-filter-icon"></div>                       
-                                    </div> -->
-                                    <div class="category-filter-list button-group filters-button-group">
-                                        <div class="button is-checked" data-filter="*">All</div>
-                                        <div class="button" data-filter=".text">Text</div>
-                                        <div class="button" data-filter=".video">Video</div>
-                                        <div class="button" data-filter=".image">Image</div>                                        
-                                    </div>
-                                    <div class="portfolio-load-content-holder"></div>
-                                    <div class="grid" id="portfolio-grid" style="position: relative; height: 1295.11px;">                                                            
-                                        <div class="grid-sizer"></div>
-
-                                        <div id="p-item-1" class="grid-item element-item p-one-third text" style="position: absolute; left: 0%; top: 0px;">
-                                            <a class="item-link ajax-portfolio" href="https://scope-maastricht.nl/" data-id="1" target="_blank">
-                                                <img src="./images/scope.jpg" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">Scope Maastricht</p>
-                                                        <p class="portfolio-cat">SCOPE is the official study association of the School of Business and Economics of Maastricht University. Our purpose is
-                                                        to support the international student population in the best way possible and aims to fulfill their interests at hand.</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                            
-                                        <div id="p-item-2" class="grid-item element-item p-one-third text" style="position: absolute; left: 49.9186%; top: 0px;">
-                                            <a class="item-link ajax-portfolio" href="https://www.maastrichtuniversity.nl/" data-id="2"  target="_blank">
-                                                <img src="./images/MU.png" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">Maastricht University</p>
-                                                        <p class="portfolio-cat">At MU, I studied the bachelor International Business. Thanks to its high-quality research and study programmes as well as a strong focus on social engagement, UM is considered one of the best young universities in the world.</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        
-
-                                        <div id="p-item-3" class="grid-item element-item p-one-third text" style="position: absolute; left: 0%; top: 431px;">
-                                            <a class="item-link ajax-portfolio" href="https://aiesec.nl/offices/maastricht/" data-id="3"  target="_blank">
-                                                <img src="./images/aiesec.webp" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">AIESEC</p>
-                                                        <p class="portfolio-cat">The youth leadership movement AIESEC is a global platform for young people to explore and develop their leadership potential.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <!-- <div class="grid-item element-item p-one-third video" style="position: absolute; left: 49.9186%; top: 431px;">
-                                            <a class="item-link" href="https://vimeo.com/199192931" data-rel="prettyPhoto[portfolio]" rel="prettyPhoto[portfolio]">
-                                                <img src="./images/portfolio4.jpg" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">Design</p>
-                                                        <p class="portfolio-cat">Video</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="grid-item element-item p-one-third image" style="position: absolute; left: 0%; top: 863px;">
-                                            <a class="item-link" href="https://demo.cocobasic.com/volos-html/images/item_03.jpg" data-rel="prettyPhoto[portfolio]" rel="prettyPhoto[portfolio]">
-                                                <img src="./images/portfolio5.jpg" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">Leaf</p>
-                                                        <p class="portfolio-cat">Image</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="grid-item element-item p-one-third image" style="position: absolute; left: 49.9186%; top: 863px;">
-                                            <a class="item-link" href="https://demo.cocobasic.com/volos-html/images/item_02.jpg" data-rel="prettyPhoto[portfolio]" rel="prettyPhoto[portfolio]">
-                                                <img src="./images/portfolio6.jpg" alt="">
-                                                <div class="portfolio-text-holder">
-                                                    <div class="portfolio-text-wrapper">
-                                                        <p class="portfolio-text">Bottle</p>
-                                                        <p class="portfolio-cat">Image</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div> -->
-
-                                    </div>                
-                                </div>   
-                            </div>
-                        </div>
-                    </div>
+                 
+                    
 
                     <!-- Resume Section -->  
                     <div id="resume" class="section">                        
@@ -288,21 +197,30 @@
                             <div class="content-1300">  
                                 <div class="row">
                                     <div class="one-half width-100">
-                                    <div class="one-half width-40 last grid_portfolio">
-                                      <img src="images/graduation-hat.png" id="hat" />    
-                                        <div>
-                                            <h2 class="entry-title section-title education-title">Education</h2>
-                                            <p class="section-info2">
-                                                Bsc. International Business
-                                            </p>
-                                            <p class="section-info3">
-                                                Maastricht University <strong>2019 - present</strong>
-                                            </p>
-                                        </div>
 
-                                        
-                                    </div>
+                                    <h2 class="entry-title section-title">Education</h2>
+                                    
+                                        <ul class="timeline-holder experience-wrapper">
+                                            <li class="timeline-event">
+                                                <div class="timeline-event-content">
+                                                    <div class="flex-wrapper">
+                                                        <img src="images/graduation-hat.png" />
+                                                    </div>
+                                                    <div>
+                                                        <span style="font-size: 22px;"><b>Bsc. International Business</b></span><br/>
+                                                        July 2020 - Present<br />
+                                                        <span>Maastricht University</span>
+                                                    </div>
+                                                </div>
+                                                <div class="timeline-event-date">2019 - 2021</div>
+                                            </li>
+                                    
+                                  
+                                    
+                                        </ul>
+
                                     <hr class="hr" />
+
                                         <h4 class="entry-title section-title">Intern Experience</h2>
 
                                         <ul class="timeline-holder experience-wrapper">                                        
@@ -438,6 +356,29 @@
                         </div>
                     </div>
 
+                    <!-- Portfolio Section -->
+                    <!-- <div id="portfolio" class="section">
+                        <div class="section-wrapper block">
+                            <div class="content-1300">
+                                <div id="portfolio-wrapper" class="relative">
+                    
+                                    <div class="glider">
+                                        <div class="glider-item">
+                                            <img src="./images/AIESEC_logo.png" />
+                                        </div>
+                                        <div class="glider-item">
+                                            <img src="./images/MU_logo.png" />
+                                        </div>
+                                        <div class="glider-item">
+                                            <img src="./images/scope_bright.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+
                     <!-- Skills Section -->  
                     <div id="skills" class="section">                        
                         <div class="section-wrapper block">
@@ -550,14 +491,11 @@
                                     <div class="one-half width-40">
 
                                         <p class="section-info">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque nunc fames.
+                                            If you have any questions or just want to speak to me, please feel free to drop a line. I am always open to getting to know new people.
                                         </p>
-                                        <p>
-                                            Magni dolores eos qui sed quia consequuntur ratione voluptatem sequi nesciunt permano Nence of the stars from which we spring muse about as a patch of light billions upon billions.                                        
+                                        <p class="section-info">
+                                            I will get back to you as soon as I can.
                                         </p>                                    
-                                        <p>
-                                            Energy hidden in matter a mote of lorem ipsum dust suspended in a sunbeam billions upon ratione voluptatem sequi nesciunt permano lorem ipsum.                                                                  
-                                        </p>
                                         <p>
                                             <b>ADDRESS:</b> Geuzenweg 218, 1221BZ, Hilversum <br>
                                             <b>EMAIL:</b> emelydavidsson@gmail.com <br>
@@ -566,21 +504,23 @@
 
                                     <div class="one-half width-55 last">
                                         <div class="contact-form">
-                                            <p>
-                                                <input id="name" type="text" name="your-name" placeholder="Name">
-                                            </p>
-                                            <p>
-                                                <input id="contact-email" type="email" name="your-email" placeholder="Email">
-                                            </p>                                    
-                                            <p>
-                                                <input id="subject" type="text" name="your-subject" placeholder="Subject">
-                                            </p>
-                                            <p>
-                                                <textarea id="message" name="your-message" placeholder="Message"></textarea>
-                                            </p>
-                                            <p class="contact-submit-holder">
-                                                <input type="submit" value="SEND">
-                                            </p>                                
+                                            <form  method="post" onclick="sendMail(); return false">
+                                                <p>
+                                                    <input id="name" type="text" name="your-name" placeholder="Name">
+                                                </p>
+                                                <p>
+                                                    <input id="contact-email" type="email" name="your-email" placeholder="Email">
+                                                </p>                                    
+                                                <p>
+                                                    <input id="subject" type="text" name="your-subject" placeholder="Subject">
+                                                </p>
+                                                <p>
+                                                    <textarea id="message" name="your-message" placeholder="Message"></textarea>
+                                                </p>
+                                                <p class="contact-submit-holder">
+                                                    <input type="submit" value="SEND">
+                                                </p>     
+                                            </form>                           
                                         </div> 
                                     </div> 
                                 </div>
@@ -601,5 +541,133 @@
         <script src="./js/owl.carousel.min.js"></script>                                                            
         <script src="./js/circle-progress.min.js"></script>                                                            
         <script src="./js/main.js"></script>
+
+        <script>
+        // window.addEventListener('load', function () {
+
+        //      var glider = new Glider(document.querySelector('.glider'), {
+        //         slidesToShow: 'auto',
+        //         slidesToScroll: 1,
+        //         // itemWidth: 250,
+        //         draggable: true,
+        //         duration: 3,
+        //         responsive: [
+        //             {
+        //                 // screens greater than >= 775px
+        //                 breakpoint: 0,
+        //                 settings: {
+        //                     // Set to `auto` and provide item width to adjust to viewport
+        //                     slidesToShow: 'auto',
+        //                     itemWidth: 50,
+        //                     // itemWidth: 150,
+        //                 }
+        //             }, {
+        //                 // screens greater than >= 1024px
+        //                 breakpoint: 780,
+        //                 settings: {
+        //                     slidesToShow: 'auto',
+        //                     itemWidth: 250,
+        //                 }
+        //             }
+        //         ]
+
+        //     });
+
+        //         const slidesCount = slider.track.childElementCount - 2;
+        //         let slideTimeout = null;
+        //         let nextIndex = 1;
+
+        //         function slide() {
+        //             slideTimeout = setTimeout(
+        //                 function () {
+        //                     if (nextIndex >= slidesCount) {
+        //                         nextIndex = 0;
+        //                     }
+        //                     slider.scrollItem(nextIndex++);
+        //                 },
+        //                 miliseconds
+        //             );
+        //         }
+
+        //         slider.ele.addEventListener('glider-animated', function () {
+        //             window.clearInterval(slideTimeout);
+        //             slide();
+        //         });
+
+        //     }
+        // );
+
+        
+
+
+        //     sliderAuto(glider, 3000)
+
+        //     })
+        // var glider = new Glider(document.querySelector('.glider'), {
+        //         slidesToShow: 'auto',
+        //         slidesToScroll: 1,
+        //         // itemWidth: 250,
+        //         draggable: true,
+        //         duration: 3,
+        //         responsive: [
+        //             {
+        //                 // screens greater than >= 775px
+        //                 breakpoint: 0,
+        //                 settings: {
+        //                     // Set to `auto` and provide item width to adjust to viewport
+        //                     slidesToShow: 'auto',
+        //                     itemWidth: 50,
+        //                     // itemWidth: 150,
+        //                 }
+        //             }, {
+        //                 // screens greater than >= 1024px
+        //                 breakpoint: 780,
+        //                 settings: {
+        //                     slidesToShow: 'auto',
+        //                     itemWidth: 250,
+        //                 }
+        //             }
+        //         ]
+
+        //     });
+        // function sliderAuto(slider, miliseconds) {
+        //         if (window.innerWidth > 780) {
+        //             if (slider.ele.getAttribute('listener') !== 'true') {
+        //                 const slidesCount = slider.track.childElementCount - 2;
+        //                 let slideTimeout = null;
+        //                 let nextIndex = 1;
+
+        //                 function slide() {
+        //                     slideTimeout = setTimeout(
+        //                         function () {
+        //                             if (nextIndex >= slidesCount) {
+        //                                 nextIndex = 0;
+        //                             }
+        //                             slider.scrollItem(nextIndex++);
+        //                         },
+        //                         miliseconds
+        //                     );
+        //                 }
+
+        //                 slider.ele.addEventListener('glider-animated', function () {
+        //                     window.clearInterval(slideTimeout);
+        //                     slide();
+        //                 });
+
+        //                 // slide();
+        //             }
+        //             slide();
+        //         }
+        //         else {
+        //             if (slider.ele.getAttribute('listener') == 'true') {
+        //                 slider.ele.removeEventListener('glider-animated');
+        //             }
+            //     }
+            // }
+
+        // window.addEventListener("resize", sliderAuto(glider, 2500));
+        
+
+        </script>
     
 <object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span></body></html>
