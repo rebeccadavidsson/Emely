@@ -416,7 +416,7 @@ ScrollReveal().reveal('.timeline-event-content', {
     distance: '100px',
     origin: "right",
     duration: 1000,
-    reset: false,
+    reset: true,
     mobile: true,
 });
 
