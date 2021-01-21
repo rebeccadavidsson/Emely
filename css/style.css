@@ -1272,6 +1272,18 @@ li.timeline-event:hover .timeline-event-date {
     align-items: center;
      justify-content: center;
 }
+
+.timeline-event-content.education {
+    line-height: 160%;
+    text-align: left;
+    margin-left: 30px;
+    background: #362a2e;
+    padding: 22px;
+    border-radius: 4px;
+    display: block;
+    justify-content: center;
+}
+
 .flex-wrapper {
     align-items: center;
 }

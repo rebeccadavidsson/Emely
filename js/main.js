@@ -400,6 +400,14 @@ var slideUp = {
     opacity: null
 };
 
+// ScrollReveal().reveal('.entry-title', {
+//     delay: 0,
+//     distance: '100px',
+//     origin: "right",
+//     duration: 1000,
+//     reset: true,
+//     mobile: true,
+// });
 
 ScrollReveal().reveal('.service-holder', {
     delay: 0,
